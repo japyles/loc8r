@@ -25,12 +25,18 @@ html
                 #navbar-main.navbar-collapse.collapse
 
                     // Add About link to left side of bar
-                    
+
                     ul.nav.navbar-nav
                         li
                             a(href='/about/') About
 
-    block content
+    .container
+        block content
+
+        footer
+            .row
+                .col-xs-12
+                    small &copy; John Pyles 2016
 
     script(src='/javascripts/jquery-2.2.3.min.js')
     script(src='/bootstrap-3.3.6-dist/js/bootstrap.min.js')
